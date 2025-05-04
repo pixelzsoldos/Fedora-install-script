@@ -29,9 +29,14 @@ flatpak install -y flathub \
     com.obsproject.Studio \
     com.valvesoftware.Steam
 
+# Install additional applications via Flatpak
+flatpak install -y flathub \
+    io.github.vscodium.codium \
+    org.audacityteam.Audacity
+
 # Install Google Chrome
 wget -q -O /tmp/google-chrome.rpm https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 sudo dnf install -y /tmp/google-chrome.rpm
 rm /tmp/google-chrome.rpm
 
-echo "Installation complete! A system restart is recommended." 
+echo "Installation complete! A system restart is recommended."
